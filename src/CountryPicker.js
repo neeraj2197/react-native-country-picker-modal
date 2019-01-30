@@ -383,6 +383,7 @@ export default class CountryPicker extends Component {
                 styles.itemCountryFlag,
                 styles.emojiFlag,
                 styles.imgStyle)}
+              <Text style={{ fontSize: 20, marginLeft: 10, marginRight: 0, alignItems: 'center'}}>{` +${country.callingCode}`}</Text>
             </View>
           )}
         </TouchableOpacity>
