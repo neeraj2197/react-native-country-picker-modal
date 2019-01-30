@@ -30,7 +30,8 @@ let countries = null
 let Emoji = null
 let styles = {}
 
-let isEmojiable = Platform.OS === 'ios'
+let isEmojiable = Platform.OS === 'ios';
+isEmojiable = false;
 
 const FLAG_TYPES = {
   flat: 'flat',
@@ -378,7 +379,7 @@ export default class CountryPicker extends Component {
             this.props.children
           ) : (
             <View
-              style={[styles.touchFlag, { marginTop: isEmojiable ? 0 : 5 }]}
+              style={[styles.touchFlag, { flexDirection: 'row', marginTop: isEmojiable ? 0 : 0 }]}
             >
               {CountryPicker.renderFlag(this.props.cca2,
                 styles.itemCountryFlag,
