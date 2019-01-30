@@ -27,12 +27,13 @@ export default StyleSheet.create({
   touchFlag: {
     alignItems: 'center',
     justifyContent: 'center',
-    height: 19
+    height: '100%',
   },
   imgStyle: {
     resizeMode: 'contain',
     width: 25,
     height: 19,
+    marginRight: 10,
     borderWidth: 1 / PixelRatio.get(),
     borderColor: '#eee',
     opacity: 0.8
@@ -43,6 +44,7 @@ export default StyleSheet.create({
     fontSize: 30,
     width: 30,
     height: 30,
+    marginRight: 10,
     borderWidth: 1 / PixelRatio.get(),
     borderColor: 'transparent',
     backgroundColor: 'transparent'
